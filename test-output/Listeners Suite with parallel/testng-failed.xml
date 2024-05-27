@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="methods" name="Failed suite [Listeners Suite with parallel]" verbose="2">
+  <listeners>
+    <listener class-name="testNG.ListenersTestNGExp"/>
+  </listeners>
+  <test parallel="methods" name="Test Cases(failed)">
+    <classes>
+      <class name="loginTest.withoutDataDriven.DataProviderTestNG">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="loginHMRCPortal" invocation-numbers="0 1"/>
+          <include name="visitPortal"/>
+        </methods>
+      </class> <!-- loginTest.withoutDataDriven.DataProviderTestNG -->
+    </classes>
+  </test> <!-- Test Cases(failed) -->
+</suite> <!-- Failed suite [Listeners Suite with parallel] -->

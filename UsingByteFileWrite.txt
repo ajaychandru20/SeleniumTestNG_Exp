@@ -1,0 +1,1 @@
+This comment is a test for the byte[] type write function, using FileOutputStream

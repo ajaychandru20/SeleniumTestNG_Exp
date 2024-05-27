@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="methods" name="Failed suite [Test Suite]" verbose="2">
+  <test parallel="methods" name="Test Case(failed)">
+    <parameter name="Name" value="Duck"/>
+    <classes>
+      <class name="testNG.ParameterParallelTest">
+        <methods>
+          <include name="openChrome" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testNG.ParameterParallelTest -->
+    </classes>
+  </test> <!-- Test Case(failed) -->
+</suite> <!-- Failed suite [Test Suite] -->

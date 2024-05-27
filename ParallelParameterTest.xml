@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Test Suite" verbose="2" parallel="methods"
+	thread-count="3">
+	<test name="Test Case">
+		<parameter name="Name" value="Duck"></parameter>
+		<classes>
+			<class name="testNG.ParameterParallelTest"></class>
+		</classes>
+	</test>
+</suite>

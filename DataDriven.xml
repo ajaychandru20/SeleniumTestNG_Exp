@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Data Driven Suite" verbose="2">
+
+	<test name="Both Correct Test">
+		<classes>
+			<class name="loginTest.withoutDataDriven.BothCorrectLogin"></class>
+		</classes>
+	</test>
+
+	<test name="Both Incorrect Test">
+	<parameter name="username" value="Ajay"></parameter>
+	<parameter name="password" value="123Ajay"></parameter>
+		<classes>
+			<class name="loginTest.withoutDataDriven.BothInCorrectLogin">
+			</class>
+		</classes>
+	</test>
+
+	<test name="Correct UserName Wrong Pass Test">
+	<parameter name="username" value="Admin"></parameter>
+	<parameter name="password" value="123Ajay"></parameter>
+		<classes>
+			<class
+				name="loginTest.withoutDataDriven.CorrectUserNameWrongPassword">
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="Wrong UserName Correct Pass Test">
+		<classes>
+			<class
+				name="loginTest.withoutDataDriven.WrongUserNameCorrectPassword">
+			</class>
+		</classes>
+	</test>
+
+
+
+</suite>

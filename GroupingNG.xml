@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Test Suite">
+	<test name="Tests Case ">
+		<groups>
+			<run>
+				<include name="Car">
+				</include>
+				<include name="Bike">
+				</include>
+			</run>
+		</groups>
+		<classes>
+			<class name="testNG.GroupingTestNG"></class>
+		</classes>
+	</test>
+</suite>

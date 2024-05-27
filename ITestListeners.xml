@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Listeners Suite with parallel" verbose="2" parallel="methods" thread-count="2">
+    <listeners>
+        <listener class-name="testNG.ListenersTestNGExp"></listener>
+    </listeners>
+    <test name="Test Cases">
+        <classes>
+            <class name="loginTest.withoutDataDriven.DataProviderTestNG"></class>
+        </classes>
+    </test>
+</suite>

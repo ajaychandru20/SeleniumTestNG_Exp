@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Data Driven Suite]" guice-stage="DEVELOPMENT" verbose="2">
+  <test name="Both Correct Test(failed)">
+    <classes>
+      <class name="loginTest.withoutDataDriven.BothCorrectLogin">
+        <methods>
+          <include name="bothCorrectLogin"/>
+        </methods>
+      </class> <!-- loginTest.withoutDataDriven.BothCorrectLogin -->
+    </classes>
+  </test> <!-- Both Correct Test(failed) -->
+</suite> <!-- Failed suite [Data Driven Suite] -->
