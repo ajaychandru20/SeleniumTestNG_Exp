@@ -16,7 +16,7 @@ public class CalenderwithDependency {
 
 	private String formattedDate;
 	private String formatCurrentDate;
-	private WebDriver driver; // Define driver as a class-level variable
+	private WebDriver driver; // Define driver as a class-level variables
 
 	@Test(enabled = true)
 	public void loginDemoQAPlatform() {
