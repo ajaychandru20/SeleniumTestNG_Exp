@@ -20,7 +20,8 @@ public class UsingFileWrite {
 
 		// Using FileWriter
 		try (FileWriter fileWriter = new FileWriter(location1)) {
-			fileWriter.write("This is the test content for the File Writer");
+			fileWriter.write("line 1: This is the test content for the File Writer");
+			fileWriter.write("line 2: This is the test content for the File Writer");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -28,7 +29,8 @@ public class UsingFileWrite {
 		// Using BufferedWriter
 		try (FileWriter buffFileWriter = new FileWriter(location2);
 		     BufferedWriter bufferedWriter = new BufferedWriter(buffFileWriter)) {
-			bufferedWriter.write("This is the test content for the Buffered File Writer!!!");
+			bufferedWriter.write("Line 1: This is the test content for the Buffered File Writer!!!");
+			bufferedWriter.write("Line 2: This is the test content for the Buffered File Writer!!!");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
